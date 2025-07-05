@@ -1,0 +1,115 @@
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte principal */
+    font-weight: 700;                 /* Peso da fonte */
+    background-color: #0e0e0e;        /* Fundo escuro */
+    color: #f0f0f0;                   /* Cor clara para texto */
+    margin: 0;                        /* Sem margem externa */
+    padding: 0;                       /* Sem padding */
+    text-align: center;               /* Centraliza textos em geral */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0e0e0e; /* Fundo do header igual ao body */
+    color: #45b380;            /* Cor principal do texto */
+    padding: 20px 0;           /* Espaço acima e abaixo */
+    font-size: 2rem;           /* Tamanho da fonte no header */
+    font-weight: 900;          /* Negrito forte */
+    box-shadow: 0 4px 8px rgba(5, 104, 46, 0.4); /* Sombra leve */
+}
+
+/* Título dentro do header */
+header h1 {
+    position: relative; /* Para posicionar o ::before em relação a ele */
+    color: #094e2e;     /* Cor do texto principal */
+    font-size: 3rem;    /* Fonte maior para destaque */
+    font-weight: 900;   /* Negrito forte */
+    /* Múltiplas sombras coloridas para dar profundidade e efeito */
+    text-shadow: 
+        1px 2px 0 #c2c2c2,
+        -1px 0px 0 #f7990e,
+        1px 0px 0 #c20101,
+        -1px 1px 0 #000,
+        2px 2px 0 #000; 
+}
+
+/* Pseudo-elemento para duplicar o texto e criar profundidade */
+header h1::before {
+    content: 'Hunter x Hunter: Nen Quest'; /* Texto duplicado */
+    position: absolute;  /* Posição absoluta para deslocar */
+    top: 5px;           /* Deslocamento para baixo */
+    left: 5px;          /* Deslocamento para direita */
+    color: #000;        /* Cor da "sombra" */
+    z-index: -1;        /* Coloca atrás do texto principal */
+}
+
+/* Imagem/banner */
+.banner {
+    width: 90%;              /* Largura responsiva */
+    max-width: 800px;        /* Limite máximo de largura */
+    margin: 20px auto;       /* Espaçamento e centralização */
+    border-radius: 15px;     /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(5, 175, 96, 0.308); /* Sombra leve */
+}
+
+/* Descrição abaixo do banner */
+.description {
+    max-width: 600px;          /* Largura máxima para leitura confortável */
+    margin: 20px auto 40px auto; /* Espaço acima e 40px abaixo para separar do botão */
+    font-size: 1.2rem;         /* Tamanho da fonte */
+    line-height: 1.5;          /* Espaçamento entre linhas para legibilidade */
+}
+
+/* Estilo do botão/link de download */
+.download-button {
+    position: relative;        /* Para o ::before funcionar corretamente */
+    background-color: #00ff90; /* Cor de fundo verde neon */
+    color: #fafafa;            /* Cor do texto do botão */
+    border: none;              /* Remove borda padrão */
+    padding: 15px 30px;        /* Espaçamento interno do botão */
+    border-radius: 50px;       /* Bordas arredondadas */
+    font-size: 1.2rem;         /* Tamanho do texto */
+    font-weight: 700;          /* Texto em negrito */
+    cursor: pointer;           /* Cursor de mãozinha ao passar */
+    margin:  0 auto 20px auto;  /* Centraliza e dá espaço embaixo */
+    transition: transform 0.2s, background-color 0.3s; /* Animação suave */
+    overflow: hidden;          /* Evita overflow do pseudo-elemento */
+    /* Sombras no texto para efeito de profundidade */
+    text-shadow: 
+        1px 1px 0 #000000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        2px 2px 0 #000;
+}
+
+/* Pseudo-elemento opcional para efeitos extras (pode remover se quiser) */
+.download-button::before {
+    content: 'Baixar Agora'; /* Mesmo texto para efeito duplicado */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Centraliza o texto */
+    align-items: center;
+    justify-content: center;
+    color: #000000; /* Cor da sombra */
+    z-index: -1; /* Fica atrás do texto principal */
+}
+
+/* Efeito ao passar o mouse no botão */
+.download-button:hover {
+    background-color: #00cc70; /* Cor de fundo muda para tom mais escuro */
+    transform: scale(1.05);    /* Aumenta levemente */
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b1b1b; /* Fundo escuro */
+    color: #888;               /* Texto cinza claro */
+    padding: 10px 0;           /* Espaço interno vertical */
+    margin-top: 40px;          /* Espaço acima do rodapé */
+    font-size: 0.9rem;         /* Texto menor */
+}

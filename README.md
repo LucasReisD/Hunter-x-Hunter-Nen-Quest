@@ -15,8 +15,8 @@ Landing page temática inspirada no universo de Hunter x Hunter, criada para tre
 ## 💡 Objetivo
 Esse projeto foi criado com fins de prática e criatividade, unindo programação com referências culturais do anime Hunter x Hunter.
 
-## 🔗 Demonstração (opcional)
-Adicione um link aqui se você for hospedar o projeto futuramente.
+## 🔗 Demonstração
+(https://lucasreisd.github.io/Hunter-x-Hunter-Nen-Quest/)
 
 ## 🙋‍♂️ Autor
 Marcos Lucas • [@LucasReisD](https://github.com/LucasReisD)
